@@ -73,7 +73,7 @@
 		margin: .2%; /* h1 height: 90px / 5 = 18px                                            >>> .2 <<<		   */
 	}
 	#insertCardsHere{
-		min-width: 1845px; /* old firefox no 'min()' support */
+		max-width: 1845px; /* old firefox no 'min()' support */
 		max-width: min( 100%, 1845px );  /*                                   300px * 6 * ( 100 + .2 * 12 ) / 100 = 1845px; */
 		min-width: 615px;                /*                                   100px * 6 * ( 100 + .2 * 12 ) / 100 = 615px */ 
 		width: calc( 120vh - 115px );    /* max-width calc: 100vh * 6 / 5 = 120vh ; 115px? was expecting 90px * 1.2 = 108px */
