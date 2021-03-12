@@ -6,7 +6,7 @@ Instructions to View:
 
 No Build Process just download and double click the memory.html file.
 
-
+![](images/Screenshot.jpeg)
 
 The Coding Instructions I was given:
 
