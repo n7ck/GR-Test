@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+		<title>Nick Timmer + Guaranteed Rate</title>
+		<link href="animations.css" rel="stylesheet">
+		<link href="memory.css" rel="stylesheet">
+	</head>
+	<body>
+	
+		<h1>Childhood Memory Game</h1>
+	
+		<div id="insertCardsHere">
+
+			<div class="flip-box" onclick="CardGame.cardClicked(this)">  <!-- CardGame.cardClicked() -->
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="images/BookCover-min.jpg" alt="Memory Card">
+					</div>
+					<div class="flip-box-back">
+						<img src="" alt="The Hobbit Scene">
+						<div class="character"></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div id="infoScreen" class="animate__flipInX">
+			<h3 class="displayNone"> Congratulations!</h3>
+			<div class="displayNone"> Game Completed in <span id='turns'>##</span> turns</div>
+			<label class="sliderwrapper">
+				<input type="checkbox" id="togBtn" onclick="CardGame.initializeNewGame();">   <!-- CardGame.initializeNewGame() -->
+				<div class="slider round"></div>
+			</label>
+		</div>
+	
+		<!--         CardGame           -->
+		<script src="CardGame.js"></script>
+
+	</body>
+</html>
