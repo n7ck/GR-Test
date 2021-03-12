@@ -1,4 +1,4 @@
-# GuaranteedRate
+# GR_Test
 Interview Assignment
 
 
