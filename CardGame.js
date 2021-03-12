@@ -133,7 +133,9 @@ var CardGame = (function(){
 			//Fullscreen
 			if ( firstGame ) {
 				firstGame = false;
-				document.body.requestFullscreen();
+				if ( document.body.requestFullscreen) {
+					document.body.requestFullscreen();
+				}
 			}
 			//disable toggle
 			toggleBtn.setAttribute('disabled',true);
