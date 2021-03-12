@@ -66,11 +66,14 @@
 		max-height:300px;
 		min-width: 100px;
 		min-height:100px;
+		width: calc( 19.40vh - 18px );  /* old firefox no 'min()' support */
+		height: calc( 19.40vh - 18px ); /* old firefox no 'min()' support */
 		width:  min( 16.26vw, calc( 19.40vh - 18px ) ); /* vw calc: 100% / 6 = 16.66%; 16.66% - ( .2 * 2 ) = 16.26 */
 		height: min( 16.26vw, calc( 19.40vh - 18px ) ); /* vh calc: 100% / 5 = 20.00%; 20.00% - ( .2 * 2 ) = 19.40 */
 		margin: .2%; /* h1 height: 90px / 5 = 18px                                            >>> .2 <<<		   */
 	}
 	#insertCardsHere{
+		min-width: 1845px; /* old firefox no 'min()' support */
 		max-width: min( 100%, 1845px );  /*                                   300px * 6 * ( 100 + .2 * 12 ) / 100 = 1845px; */
 		min-width: 615px;                /*                                   100px * 6 * ( 100 + .2 * 12 ) / 100 = 615px */ 
 		width: calc( 120vh - 115px );    /* max-width calc: 100vh * 6 / 5 = 120vh ; 115px? was expecting 90px * 1.2 = 108px */

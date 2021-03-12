@@ -33,8 +33,9 @@ var CardGame = (function(){
 	var turnsTaken = null;
 	var firstGame = true;
 
-	//Firefox Refresh State of Checkbox:
+	//Firefox Refresh State of Checkbox after page reload:
 	toggleBtn.checked = false;
+	toggleBtn.removeAttribute('disabled');
 
 	//--------------------
 	//PRIVATE Helper Functions
